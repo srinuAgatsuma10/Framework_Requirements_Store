@@ -26,7 +26,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import baseClass.TestCaseBaseClass;
 
 
-public class ExtentReportManager implements ITestListener {
+public class ExtentReportManager1 implements ITestListener {
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
@@ -50,7 +50,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "Luma");
+		extent.setSystemInfo("Application", "Ecom");
 		extent.setSystemInfo("Module", "User");
 		extent.setSystemInfo("Sub Module", "Customers");
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
